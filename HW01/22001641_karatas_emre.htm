@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>List Operations</title>
+</head>
+<body>
+	<h1>List Operations</h1>
+
+	<script>
+		// Declare an empty list
+		let emptyList = [];
+
+		// Initialize a list with some values
+		let famousCSPeople = ["Tim Barners-Lee","Alan Turing", "Barbara Liskov"];
+
+		// Check if the list is empty or not
+		if (emptyList.length === 0) {
+			console.log("emptyList is empty");
+		} else {
+			console.log("emptyList is not empty");
+		}
+		
+		// Check if the list is empty or not
+		if (famousCSPeople.length === 0) 
+		{
+			console.log("famousCSPeople is empty");
+		} else {
+			console.log("famousCSPeople is not empty");
+		}
+
+		// Add a new element to a list
+		famousCSPeople.push("Lars Bak");
+
+		// Check if a particular element exists in the list
+		if (famousCSPeople.includes("Ada Lovelace")) {
+			console.log("Ada Lovelace exists in famousCSPeople");
+		} else {
+			console.log("Ada Lovelace does not exist in famousCSPeople");
+		}
+
+		// Remove a particular element from the list
+		let index = famousCSPeople.indexOf("Barbara Liskov");
+		if (index !== -1) {
+			famousCSPeople.splice(index, 1);
+		}
+
+		// Get the head and the tail of a list
+		let head = famousCSPeople[0];
+		let tail = famousCSPeople[famousCSPeople.length - 1];
+		
+	  // Print the head and tail of the list with labels
+		console.log("Head is: " + head);
+		console.log("Tail is: " + tail);
+
+		// Print all of the elements in the list
+		console.log(famousCSPeople.join(", "));
+	</script>
+</body>
+</html>
