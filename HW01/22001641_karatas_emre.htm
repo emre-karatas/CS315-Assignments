@@ -38,7 +38,7 @@
 
 		if (Array.isArray(famousCSPeople) && famousCSPeople.length > 0) {
   			let head = famousCSPeople[0];	
-  			let tail = famousCSPeople[famousCSPeople.length - 1];
+  			let tail = famousCSPeople.slice(1);
 		
   			// Print the head and tail of the list with labels
   			console.log("Head is: " + head);
