@@ -8,8 +8,12 @@ famous_cs_people = ["Tim Barners-Lee", "Alan Turing", "Barbara Liskov"]
 puts empty_list.empty? ? "emptyList is empty" : "emptyList is not empty"
 puts famous_cs_people.empty? ? "famousCSPeople is empty" : "famousCSPeople is not empty"
 
-# Add a new element to a list
-famous_cs_people << "Lars Bak"
+# Add a new element to the list, if it exists and is not frozen
+if famous_cs_people && !famous_cs_people.frozen?
+  famous_cs_people << "Lars Bak"
+else
+  puts "Error: famous_cs_people is not defined or is frozen."
+end
 
 # Check if a particular element exists in the list
 def contains(list, element)
@@ -22,12 +26,18 @@ else
   puts "Ada Lovelace does not exist in famousCSPeople"
 end
 
-# Remove a particular element from the list
+# Define the function to remove an element from the list, if it exists
 def remove_element(list, element)
-  list.delete(element)
+  if list && !list.frozen?
+    list.delete(element)
+  else
+    puts "Error: The list is not defined or is frozen."
+  end
 end
 
+# Call the function to remove an element from the list, if it exists
 remove_element(famous_cs_people, "Barbara Liskov")
+
 
 # Get the head and the tail of a list
 if famous_cs_people.length > 0
