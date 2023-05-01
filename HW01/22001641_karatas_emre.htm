@@ -36,13 +36,17 @@
 			famousCSPeople.splice(index, 1);
 		}
 
-		// Get the head and the tail of a list
-		let head = famousCSPeople[0];
-		let tail = famousCSPeople[famousCSPeople.length - 1];
+		if (Array.isArray(famousCSPeople) && famousCSPeople.length > 0) {
+  			let head = famousCSPeople[0];	
+  			let tail = famousCSPeople[famousCSPeople.length - 1];
 		
-	  // Print the head and tail of the list with labels
-		console.log("Head is: " + head);
-		console.log("Tail is: " + tail);
+  			// Print the head and tail of the list with labels
+  			console.log("Head is: " + head);
+  			console.log("Tail is: " + tail);
+		} else {
+  			console.log("The famousCSPeople array is empty or not defined.");
+		}
+
 
 		// Print all of the elements in the list
 		console.log(famousCSPeople.join(", "));
