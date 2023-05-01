@@ -48,8 +48,12 @@
 		}
 
 
-		// Print all of the elements in the list
-		console.log(famousCSPeople.join(", "));
+		if (Array.isArray(famousCSPeople) && famousCSPeople.length > 0) {
+	  		console.log(famousCSPeople.join(", "));
+		} else {
+  			console.log("The famousCSPeople array is empty or not defined.");
+		}
+
 	</script>
 </body>
 </html>
