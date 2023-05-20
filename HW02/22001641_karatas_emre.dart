@@ -44,6 +44,7 @@ void printFamousCSPeopleWithIntroduction(Function printFunction, String name, in
   print('------------------------------------');
 }
 
+//ERRONEOUS CODE FUNCTION FOR PART 1.5
 void incorrectFunction(String name, int birthYear, String nationality) 
 {
   print('Name: $name, Birth Year: $birthYear, Nationality: $nationality');
