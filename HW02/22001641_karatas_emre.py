@@ -27,8 +27,8 @@ def change_famous_cs_people_details(name, details):
     name = "Bjarne Stroustrup"
     details['name'] = "Bjarne Stroustrup"
 
-name = "Alan Turing"
-details = {'name': "Elon Musk"}
+name = "Elon Musk"
+details = {'name': "Jeff Bezos"}
 
 change_famous_cs_people_details(name, details)
 
