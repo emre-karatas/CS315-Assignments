@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS315 HW2: JavaScript Test Code</title>
+</head>
+<body>
+
+	<h1>Click "inspect" button to see results of Javascript console outputs.</h1>
+
+    <script>
+    // Formal and Actual Parameters Type Checking Example
+    function printFamousCSPeopleName(name) {
+        console.log(name);
+    }
+
+    printFamousCSPeopleName("Alan Turing");
+    printFamousCSPeopleName(1912);  // No type error, but incorrect usage
+
+    // Keyword (Named) Parameters Example
+    function printFamousCSPeopleDetails({ name, birthYear }) {
+        console.log(`Name: ${name}, Birth Year: ${birthYear}`);
+    }
+
+    printFamousCSPeopleDetails({ name: 'Alan Turing', birthYear: 1912 });
+
+    // Default Parameters Example
+    function printFamousCSPeopleDetailsDefault({ name = "Tim Berners-Lee", birthYear = 1955 } = {}) {
+        console.log(`Name: ${name}, Birth Year: ${birthYear}`);
+    }
+
+    printFamousCSPeopleDetailsDefault();
+    printFamousCSPeopleDetailsDefault({ name: 'Alan Turing' });
+
+    // Parameter Passing Methods Example
+    function changeDetails(name, person) {
+        name = "Bjarne Stroustrup";
+        person.name = "Bjarne Stroustrup";
+    }
+
+    let name = "Alan Turing";
+    let person = { name: "Alan Turing" };
+
+    changeDetails(name, person);
+
+    console.log(name); // still "Alan Turing"
+    console.log(person.name); // changed to "Bjarne Stroustrup"
+
+    // Subprograms as Parameters Example
+    function printFamousCSPeopleWithIntroduction(printFunction, name, birthYear) {
+        console.log('------Famous CS Person Details------');
+        printFunction(name, birthYear);
+        console.log('------------------------------------');
+    }
+
+    function printFamousCSPeopleNameAndBirthYear(name, birthYear) {
+        console.log(`Name: ${name}, Birth Year: ${birthYear}`);
+    }
+
+    printFamousCSPeopleWithIntroduction(printFamousCSPeopleNameAndBirthYear, "Alan Turing", 1912);
+    </script>
+
+</body>
+</html>
