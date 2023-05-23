@@ -17,11 +17,19 @@ print_famous_cs_people_named_params(birth_year: 1939, name: "Barbara Liskov")
 
 puts('---5.3---')
 # Default Parameters Example
-def print_famous_cs_people_default_params(name = "Ada Lovelace", birth_year = 1815)
+def print_famous_cs_people_default_params(name ="Ada Lovelace", birth_year=1815)
   puts "Name: #{name}, Birth Year: #{birth_year}"
 end
 
 print_famous_cs_people_default_params()
+
+def print_famous_cs_people_default_params_2(birth_year: 1815, name: "Ada Lovelace")
+  puts "Name: #{name}, Birth Year: #{birth_year}"
+end
+
+print_famous_cs_people_default_params_2(name: "John Doe") 
+print_famous_cs_people_default_params_2(birth_year:2000) 
+
 
 puts('---5.4---')
 # Parameter Passing Methods Example
