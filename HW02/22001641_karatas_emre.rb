@@ -5,7 +5,7 @@ def print_famous_cs_people_details(name, birth_year)
 end
 
 print_famous_cs_people_details("Alan Turing", 1912)
-print_famous_cs_people(1912, "Alan Turing") # This also works but the output is not as expected.
+print_famous_cs_people_details(1912, "Alan Turing") # This also works but the output is not as expected.
 
 puts('---5.2---')
 # Named Parameters Example
