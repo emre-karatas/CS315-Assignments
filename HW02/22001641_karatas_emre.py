@@ -19,6 +19,8 @@ def print_famous_cs_people_details(name="Ada Lovelace", birth_year=1815):
     print(f'Name: {name}, Birth Year: {birth_year}')
 
 print_famous_cs_people_details()
+print_famous_cs_people_details(birth_year=1945)
+print_famous_cs_people_details(name="John Doe")
 
 
 print('---5.4---')
