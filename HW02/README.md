@@ -1,47 +1,41 @@
-Subprogram Parameters in Dart, Go, Javascript, Lua, Python, Ruby, and Rust
+# Probing Subprogram Parameters across Diverse Programming Languages | Total Points: 99
 
-In this homework assignment, you will investigate some design isuues related to parameters of subprograms, in seven different programming languages. The programming languages are Dart, Go (Golang), Javascript, Lua, Python, Ruby, and Rust. You will investigate how the following design issues are resolved in these programming languages:
+In this assignment, we delve into the intricate design issues tied to subprogram parameters across seven distinct programming languages. The chosen languages for this exploration are Dart, Go (Golang), JavaScript, Lua, Python, Ruby, and Rust. Your task involves unraveling how these languages address the following design quandaries:
 
-    Are formal and actial parameters type checked?
-    Are keyword (named) parameters supported?
-    Are default paremeters supported?
-    What are the paremeter passing methods provided?
-    Can subprograms be passed as parameters? If so, how is the referencing environment of the passed subprogram bound? 
+1. Are formal and actual parameters subjected to type checking?
+2. Is the implementation of keyword (named) parameters supported?
+3. Is there support for default parameters?
+4. What are the provided parameter passing methods?
+5. Is there a provision to pass subprograms as parameters? If so, how is the referencing environment of the passed subprogram bound?
 
-You can use online compilers/interpreters for this homework.
+Feel free to utilize online compilers or interpreters for this assignment.
 
-For each language, prepare a single source code file that exemplifies and tests each operation, in the order given above. Your example programs must be different from the example codes that may be available on the Internet. Be careful to avoid plagiarism!
+For each language, construct a unique source code file that exemplifies and tests each operation, in the sequential order outlined above. It is paramount that your example programs vary distinctly from any available example codes on the Internet. Exercise due caution to avoid plagiarism.
 
-Organize all of your experiments and their results and put them into a report. The report should include Parts A, B, and C, as explained below:
-Part A - Design issues in each language (45 points)
-For each language and each design issue, give some sample code segments and the results of their execution. You should explain what your example does, and the output, if generated.
-Part B - Evaluation (10 points)
-Your evaluation of these languages in terms of readability and writability of list operations. Discuss, in your opinion, which language is the best in terms of subprogram parameters.
-Part C - Learning strategy (10 points)
-A learning strategy is an individual's approach to completing a task. In this section, discuss, in detail, the material and tools you used, and the experiments you performed. Also talk about personal communication, if you had. Give the URLs of the online compiler/interpreters you used to run your programs.
-Part D- Sample Codes (35 points)
-The sample code files must compile and run without any errors.
+Collate your findings and experimental results into a comprehensive report encompassing the following sections:
+* **Part A - Design Issues in Each Language (45 points):** For each language and corresponding design issue, present sample code segments and their execution results. Your explanation should articulate what your example accomplishes and decode the generated output, if any.
+* **Part B - Evaluation (10 points):** Provide your assessment of these languages in terms of readability and writability of subprogram parameters. In your perspective, identify the language that excels in handling subprogram parameters.
+* **Part C - Learning Strategy (10 points):** Discuss your approach towards accomplishing this task, detailing the materials, tools, and experimental methods used. If relevant, elaborate on any personal communication undertaken during this process. Also, provide the URLs of the online compiler/interpreters used to run your programs.
+* **Part D - Sample Codes (35 points):** Ensure all your code files compile and run error-free.
 
-Submission:
+**Submission Guidelines:**
 
-A single zip or rar file should be submitted containing the following files with given names:
+Submit your completed assignment as a single .zip or .rar file containing the following:
 
-    A single file for the Report, containing parts A, B, and C: ID_lastname_name_report.pdf (65 Points)
-    A folder called, Codes, for Part D. The contents of the folder will be as follows:
-        A single file for Dart code: ID_lastname_name.dart (5 points)
-        A single file for Go code:ID_lastname_name.go (5 points)
-        A single file for Javascript code: ID_lastname_name.html (5 points)
-        A single file for Lua code: ID_lastname_name.lua (5 points)
-        A single file for Python code: ID_lastname_name.py (5 points)
-        A single file for Ruby code: ID_lastname_name.rb (5 points)
-        A single file for Rust code: ID_lastname_name.rs (5 points) 
+* A singular .pdf file for the Report (Parts A, B, C) named as `ID_lastname_name_report.pdf`.
+* A folder, titled `Codes`, for Part D, containing:
+    * Dart code file: `ID_lastname_name.dart`
+    * Go code file: `ID_lastname_name.go`
+    * JavaScript code file: `ID_lastname_name.html`
+    * Lua code file: `ID_lastname_name.lua`
+    * Python code file: `ID_lastname_name.py`
+    * Ruby code file: `ID_lastname_name.rb`
+    * Rust code file: `ID_lastname_name.rs`
 
-Please upload the zip or rar file you created to Moodle before the due date.
+Please upload your file to Moodle before the given deadline.
 
-Important Notes:
+**Important Points:**
 
-    Late submissions will be accepted, with 10 points (out of 100) deduction for each extra day.
-
-    You may use the tutorials available on the Internet as a reference but do not derive your example from the contents of the tutorials. If you do so, your programs may be similar to others in the class, which causes a disciplinary investigation.
-
-    Collaboration on the homework is not allowed.
+* Late submissions will be accepted, but a deduction of 10 points per day will be enforced.
+* While online tutorials can be used as a reference, avoid using their content as the basis for your examples. Any deviation from this rule might lead to similar submissions and result in a disciplinary investigation.
+* Collaboration on this assignment is not permitted.
